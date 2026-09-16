@@ -1,0 +1,19 @@
+Şirketimiz çalışanlarına yılda 14 gün yıllık izin verir.
+İzin talepleri yöneticinin onayına sunulur.
+Çalışanlar izin başvurularını şirketin insan kaynakları sistemi üzerinden yapabilir.
+
+Uzaktan çalışanlar VPN kullanmalıdır.
+Şirket bilgisayarları düzenli olarak güncellenir.
+Çalışanların şirket sistemlerine bağlanırken güvenli bağlantı kullanması zorunludur.
+
+Çalışanlara her ayın sonunda maaş ödemesi yapılır.
+Maaş bilgileri çalışanlara özel tutulur.
+Maaş bordroları çalışanların kişisel hesapları üzerinden görüntülenebilir.
+
+Şirket çalışanlarının güvenlik eğitimlerine katılması zorunludur.
+Yeni çalışanlara ilk hafta içerisinde şirket politikaları anlatılır.
+Çalışanlar şirket kaynaklarını yalnızca iş amaçlı kullanmalıdır.
+
+Yıllık performans değerlendirmeleri her yılın sonunda gerçekleştirilir.
+Yöneticiler çalışanlarla performans görüşmeleri yapar.
+Performans sonuçları çalışanların gelişim planlarında kullanılır.
