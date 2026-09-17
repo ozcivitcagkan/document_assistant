@@ -32,7 +32,6 @@ anthropic_client = anthropic.Anthropic(
 
 
 def create_paragraph_chunks(text, max_size=500):
-    """Group paragraphs into chunks up to the target character size."""
     paragraphs = text.split("\n\n")
     chunks = []
     current_chunk = ""
@@ -56,7 +55,6 @@ def create_paragraph_chunks(text, max_size=500):
 
 
 def create_document_embeddings(texts):
-    """Create embeddings for document chunks."""
     result = voyage_client.embed(
         texts,
         model="voyage-4",
@@ -66,7 +64,6 @@ def create_document_embeddings(texts):
 
 
 def create_query_embedding(query):
-    """Create an embedding for a user query."""
     result = voyage_client.embed(
         [query],
         model="voyage-4",
@@ -76,7 +73,6 @@ def create_query_embedding(query):
 
 
 def add_document_to_collection(file_path):
-    """Read, chunk, embed and store one document in Chroma."""
     text = read_document(file_path)
     chunks = create_paragraph_chunks(text)
 
@@ -112,7 +108,6 @@ def add_document_to_collection(file_path):
 
 
 def find_relevant_chunks(query, top_k=3):
-    """Retrieve the most relevant document chunks for a query."""
     query_embedding = create_query_embedding(query)
 
     results = collection.query(
@@ -133,7 +128,6 @@ def find_relevant_chunks(query, top_k=3):
 
 
 def build_rag_prompt(query, chunks):
-    """Build a grounded prompt using retrieved document chunks."""
     context = "\n\n".join(
         chunk["text"]
         for chunk in chunks
@@ -167,7 +161,6 @@ Answer:
 
 
 def ask_rag(query, top_k=3):
-    """Retrieve relevant chunks and generate an answer with Claude."""
     relevant_chunks = find_relevant_chunks(query, top_k=top_k)
     prompt = build_rag_prompt(query, relevant_chunks)
 
@@ -188,7 +181,6 @@ def ask_rag(query, top_k=3):
 
 
 def load_new_documents(folder_path):
-    """Load only documents that are not already stored in Chroma."""
     if not os.path.exists(folder_path):
         print(f"Folder not found: {folder_path}")
         os.makedirs(folder_path)
