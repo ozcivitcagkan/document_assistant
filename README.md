@@ -24,8 +24,7 @@ document_assistant/
 ├── rag_motoru.py
 ├── main.py
 ├── requirements.txt
-├── README.md
-└── README_TR.md
+
 ```
 
 ## Setup
@@ -72,9 +71,4 @@ The project checks which documents have already been added to ChromaDB, so they 
 This is a learning and portfolio project. The current version uses a simple command-line interface and does not include a web upload page or conversation memory.
 
 ## Next Steps
-
-- Web interface
-- File upload
-- Conversation memory
-- Document update and delete
 - AI agents and tool calling
