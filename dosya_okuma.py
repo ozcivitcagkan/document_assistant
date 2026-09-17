@@ -4,13 +4,11 @@ from docx import Document
 
 
 def read_txt(file_path):
-    """Read a UTF-8 text file."""
     with open(file_path, "r", encoding="utf-8") as file:
         return file.read()
 
 
 def read_pdf(file_path):
-    """Extract text from all pages of a PDF file."""
     reader = PdfReader(file_path)
     full_text = ""
 
@@ -22,7 +20,6 @@ def read_pdf(file_path):
 
 
 def read_docx(file_path):
-    """Extract paragraph text from a DOCX file."""
     document = Document(file_path)
     full_text = ""
 
@@ -33,7 +30,6 @@ def read_docx(file_path):
 
 
 def read_document(file_path):
-    """Read a supported document based on its file extension."""
     extension = os.path.splitext(file_path)[1].lower()
 
     if extension == ".txt":
