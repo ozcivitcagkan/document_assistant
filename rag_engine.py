@@ -5,7 +5,7 @@ import anthropic
 import glob
 from dotenv import load_dotenv
 
-from dosya_okuma import read_document
+from file_loader import read_document
 
 
 load_dotenv()

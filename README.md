@@ -20,8 +20,8 @@ Claude then uses the retrieved content to generate the answer.
 ```text
 document_assistant/
 ├── documents/
-├── dosya_okuma.py
-├── rag_motoru.py
+├── file_loader.py
+├── rag_engine.py
 ├── main.py
 ├── requirements.txt
 

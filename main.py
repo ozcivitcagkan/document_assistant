@@ -1,5 +1,5 @@
 import os
-from rag_motoru import load_new_documents, ask_rag, collection
+from rag_engine import load_new_documents, ask_rag, collection
 
 
 def start_document_assistant():
