@@ -68,7 +68,5 @@ The application also shows which document and chunk were used for the answer.
 
 The project checks which documents have already been added to ChromaDB, so they are not embedded again every time the program starts.
 
-This is a learning and portfolio project. The current version uses a simple command-line interface and does not include a web upload page or conversation memory.
-
 ## Next Steps
 - AI agents and tool calling
